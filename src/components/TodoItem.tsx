@@ -22,7 +22,9 @@ export const TodoItem: React.FC<Props> = ({ todo, todos, setTodos }) => {
   };
 
   const handleDelete = (id: string) => {
-    setTodos(todos.filter((item) => item.id !== id));
+    if (window.confirm("Are you sure you want to delete this note?")) {
+      setTodos(todos.filter((item) => item.id !== id));
+    }
   };
 
   const handleEdit = () => {
