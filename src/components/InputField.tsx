@@ -14,7 +14,7 @@ export const InputField: React.FC<Props> = ({ todo, setTodo, handleAdd }) => {
         type="text"
         value={todo}
         onChange={(e) => setTodo(e.target.value)}
-        placeholder="Enter your TODO"
+        placeholder="Put those magical ideas in writing..."
         className="p-2 flex-3/5 outline-0 text-xl"
       />
       <button className="shadow transition duration-300 hover:bg-orange-600 cursor-pointer bg-orange-500 p-2 font-bold rounded-full flex-">

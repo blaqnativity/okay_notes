@@ -20,7 +20,7 @@ const App: React.FC = () => {
         Okay_Notes
       </h2>
       <span className="font-bold text-orange-100 tracking-wider">
-        "Pen down one idea a day, become tomorrow's leader"
+        "Pen down one idea today, become tomorrow's leader"
       </span>
 
       <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
